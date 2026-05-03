@@ -1,0 +1,154 @@
+:root {
+    --main-color:rgb(1, 5, 50);
+    --second-color:rgb(250, 213, 168);
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(back.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    height: 820px;
+}
+
+.d-form {
+    display: block;
+    margin: auto;
+    margin-top: 80px;
+    backdrop-filter: blur(10000px);
+    background-color: red;
+    background-image: url(drob.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    width: 30%;
+    height: 750px;
+    box-shadow: 0 0 20px 20px rgb(255, 255, 255, 0.2);
+    border-radius: 80px;
+    -webkit-border-radius: 80px;
+    -moz-border-radius: 80px;
+    -ms-border-radius: 80px;
+    -o-border-radius: 80px;
+}
+
+
+.d-form .prof img {
+    display: block;
+    margin: auto;
+    width: 40%;
+}
+
+.d-form input {
+    display: block;
+    margin: auto;
+    width: 80%;
+    padding: 6.5% 3% 3% 3%;
+    border: 2px solid white;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    background: transparent;
+    font-size: 120%;
+    color: white;
+    outline: none;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+}
+
+.d-form .div-1 input {
+    margin-top: 30px;
+}
+
+.d-form .div-2 input {
+    margin-top: 30px;
+}
+
+.d-form .div-3 input {
+    margin-top: 35px;
+    padding: 3%;
+    width: 50%;
+    border: none;
+    background-color: var(--second-color);
+    color: var(--main-color);
+    font-size: 140%;
+    font-weight: 900;
+    transition: 0.3s ease-out;
+    -webkit-transition: 0.3s ease-out;
+    -moz-transition: 0.3s ease-out;
+    -ms-transition: 0.3s ease-out;
+    -o-transition: 0.3s ease-out;
+    cursor: pointer;
+}
+
+.d-form .div-3 input:hover {
+    width: 80%;
+    padding: 4%;
+}
+
+.d-form .div-1 input:focus + label,
+.d-form .div-2 input:focus + label {
+    color: var(--second-color);
+}
+
+.d-form .div-1 input:focus,
+.d-form .div-2 input:focus {
+    border-color: var(--second-color);
+}
+
+
+.d-form label {
+    display: block;
+    width: fit-content;
+    color: white;
+    font-size: 100%;
+    transform: translateY(-390%);
+    -webkit-transform: translateY(-390%);
+    -moz-transform: translateY(-390%);
+    -ms-transform: translateY(-390%);
+    -o-transform: translateY(-390%);
+    margin-left: 11%;
+    cursor: text;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+}
+
+.d-form a {
+    display: block;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.d-form button {
+    display: block;
+    margin: auto;
+    width: 80%;
+    border: none;
+    outline: none;
+    background-color: var(--second-color);
+    color: var(--main-color);
+    font-size: 130%;
+    font-weight: 900;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    padding: 3%;
+    margin-top: 5%;
+    cursor: pointer;
+}
+
