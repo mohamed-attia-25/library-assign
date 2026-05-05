@@ -1,0 +1,574 @@
+:root {
+    --main-color: rgb(255, 255, 255);
+    --maim-color-hover: #eee;
+    --second-color: rgb(0, 100, 224);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.nav-bar {
+    display: block;
+    position: fixed;
+    width: 100vw;
+    height: 9vh;
+    background-color: #eee;
+    top: 0;
+    left: 0;
+}
+
+.nav-bar #check-sidbar {
+    display: none;
+}
+
+.nav-bar label {
+    position: absolute;
+    display: inline-block;
+    font-size: 2vw;
+    top: 1.9vh;
+    left: 1vw;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+}
+
+.nav-bar label:hover{
+    color: var(--second-color);
+}
+
+.nav-bar ul li a {
+    color: rgb(0 0 0 );
+    transition: all 0.4 ease;
+    -webkit-transition: all 0.4 ease;
+    -moz-transition: all 0.4 ease;
+    -ms-transition: all 0.4 ease;
+    -o-transition: all 0.4 ease;
+    text-decoration: none;
+}
+
+
+.nav-bar li {
+    display: inline-block;
+    list-style-type: none;
+    position: absolute;
+    top: 0vh;
+    font-size: 1.6vw;
+    text-align: center;
+    padding: 2vh 1vw;
+    border-bottom: 4px solid rgba(0, 100, 224, 0);
+    transition: all 0.8s ease;
+    -webkit-transition: all 0.8s ease;
+    -moz-transition: all 0.8s ease;
+    -ms-transition: all 0.8s ease;
+    -o-transition: all 0.8s ease;
+    cursor: pointer;
+}
+
+.nav-bar li:hover {
+    border-bottom: 4px solid var(--second-color);
+    color: var(--second-color);
+}
+
+.nav-bar li:hover a {
+    color: var(--second-color);
+}
+
+.nav-bar .li-1 {
+    right: 1vw;
+}
+
+.nav-bar .li-2 {
+    right: 8vw;
+}
+
+.nav-bar .li-3 {
+    right: 15vw;
+}
+
+.nav-bar .li-4 {
+    right: 22vw;
+}
+
+.nav-bar .li-5 {
+    top: 1vh;
+    right: 28vw;
+    padding: 0;
+    cursor: pointer;
+}
+
+.nav-bar .li-5 div {
+    position: relative;
+}
+
+.nav-bar .li-5 i {
+    display: inline-block;
+    position: absolute;
+    top: 0.9vh;
+    right: 0vw;
+    font-size: 1.8vw;
+    z-index: 1;
+}
+
+.nav-bar .li-5 div:hover .search {
+    opacity: 1;
+    width: 18vw;
+}
+
+.nav-bar .li-5 .search {
+    opacity: 0;
+    display: inline-block;
+    position: absolute;
+    right: 2vw;
+    border: none;
+    outline: none;
+    width: 0vw;
+    height: 2.5vh;
+    border: 2px solid var(--second-color);
+    font-size: 1.1vw;
+    padding: 3vh 1vw;
+    border-radius: 35px;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    -ms-border-radius: 35px;
+    -o-border-radius: 35px;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+.nav-bar .li-5 input::placeholder {
+    position: absolute;
+    font-size: 1.1vw;
+    left: 0.9vw;
+}
+
+
+
+.nav-sidbar {
+    display: inline-block;
+    position: fixed;
+    width: 4vw;
+    height: 91vh;
+    top: 9vh;
+    left: 0;
+    border-right: 5px solid black ;
+    transition-delay: 0.2s;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+}
+
+
+.nav-sidbar li {
+    position: absolute;
+    left: 1.1vw;
+    display: block;
+    cursor: pointer;
+    color: black;
+    list-style-type: none;
+}
+
+.nav-sidbar .li-1 {
+    top: 3vh;
+}
+
+.nav-sidbar .li-2 {
+    top: 10vh;
+}
+
+.nav-sidbar .li-3 {
+    top: 17vh;
+}
+
+.nav-sidbar .li-4 {
+    top: 24vh;
+}
+
+.nav-sidbar .li-5 {
+    top: 31vh;
+}
+
+.nav-sidbar .li-6 {
+    bottom: 3vh;
+}
+
+.nav-sidbar li i {
+    font-size: 2vw;
+    transition-delay: 5ms;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+.nav-sidbar li a {
+    text-decoration: none;
+    color: black
+}
+
+.nav-sidbar .li-1 a:hover {
+    color: var(--second-color) ;
+}
+
+.nav-sidbar .li-2 a:hover {
+    color: rgb(10, 102, 194);
+}
+
+.nav-sidbar .li-3 a:hover {
+    color: rgb(254, 0, 131) ;
+}
+
+.nav-sidbar .li-4 a:hover {
+    color: red ;
+}
+
+.nav-sidbar .li-5 a:hover {
+    color:rgb(33, 192, 99) ;
+}
+
+.nav-sidbar .li-6 a:hover {
+    color: gray;
+}
+
+.nav-bar:has(#check-sidbar:checked) + .nav-sidbar {
+    width: 11vw;
+}
+
+.nav-bar:has(#check-sidbar:checked) + .nav-sidbar li span {
+    opacity: 1;
+}
+
+.nav-sidbar li span {
+    opacity: 0;
+    position: absolute;
+    font-size: 1.3vw;
+    font-weight: 600;
+    left: 3vw;
+    top: 1vh;
+    transition-delay: 5ms;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+/*  */
+
+.login {
+    display: inline-block;
+    position: relative;
+    width: calc(74vw - 4vw);
+    height: 91vh;
+    top: 9vh;
+    left: calc(4vw + 5px);
+    transition:all 0.4s ease;
+    -webkit-transition:all 0.4s ease;
+    -moz-transition:all 0.4s ease;
+    -ms-transition:all 0.4s ease;
+    -o-transition:all 0.4s ease;
+}
+
+.nav-bar:has(#check-sidbar:checked) ~ .login {
+    width: calc(70vw - 11vw);
+    left: calc(11vw + 5px);
+}
+
+.login p {
+    position: absolute;
+    width: 15%;
+    top: 2vh;
+    left: calc(85% / 2);
+    text-align: center;
+}
+
+.login p i {
+    font-size: 1000%;
+    color: black;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+.login p i:hover {
+    color: var(--second-color)
+}
+
+.login .div-1 {
+    display: block;
+    width: 60%;
+    height: 15vh;
+    margin: auto;
+    position: absolute;
+    left: calc(40% / 2);
+    top: 20vh;
+}
+
+.login .div-2 {
+    display: block;
+    width: 60%;
+    height: 15vh;
+    margin: auto;
+    position: absolute;
+    left: calc(40% / 2);
+    top: 36vh
+}
+
+.login .div-1 input,
+.login .div-2 input {
+    display: block;
+    margin: auto;
+    margin-top: 3vh;
+    width: 70%;
+    padding: 4vh 3% 2vh ;
+    font-size: 130%;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    border: 3px solid black;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+}
+
+.login .div-1 label,
+.login .div-2 label {
+    position: absolute;
+    font-size: 150%;
+    font-weight: 900;
+    top: 3.4vh;
+    left: 14%;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+}
+
+.login .div-1 input:focus,
+.login .div-2 input:focus {
+    border-color: var(--second-color);
+}
+
+.login .div-1 input:focus + label,
+.login .div-2 input:focus + label {
+    color: var(--second-color);
+}
+
+
+.sub-login {
+    width: 30%;
+    position: absolute;
+    top: 52vh;
+    left: calc(70% / 2);
+    font-size: 150%;
+    font-weight: 900;
+    color: white;
+    background-color: black;
+    padding: 2.5vh 5%;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+}
+
+.sub-login:hover {
+    background-color: var(--second-color);
+    width: 40%;
+    left: calc(60% / 2);
+}
+
+.login a {
+    text-align: center;
+    display: block;
+    position: absolute;
+    font-size: 130%;
+    top: 62vh;
+    width: 15%;
+    left: calc(85% / 2);
+    text-decoration: none;
+    color: black;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+}
+
+.login a:hover {
+    color: var(--second-color);
+}
+
+.login button {
+    position: absolute;
+    top: 70vh;
+    left: calc(55% / 2);
+    width: 45%;
+    padding: 3vh 3%;
+    font-size: 150%;
+    font-weight: 900;
+    color: white;
+    background-color: black;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+}
+
+.login button:hover {
+    background-color: var(--second-color);
+}
+
+.nav-bar:has(#check-sidbar:checked) ~ .row {
+    left: 74vw;
+}
+
+.row {
+    display: inline-block;
+    position: absolute;
+    top: 12vh;
+    height: 85vh ;
+    width: calc(1vh - 5px);
+    background-color: rgba(0, 0, 0, 0.699);
+    left: 74vw;
+}
+
+.links {
+    background-color: black;
+    background-image: url(../photo/icon-crop.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    padding: 3vh 0;
+    width: 20vw;
+    height: 60vh;
+    top: 22vh;
+    left: 77.5vw;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+}
+
+.links:hover {
+    background-color: var(--second-color);
+}
+
+.links:hover span a i {
+    filter: blur(0);
+    -webkit-filter: blur(0);
+}
+
+.links span a i {
+    position: absolute;
+    font-size: 500%;
+    color: black;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+}
+
+
+.links .sp-1 a i {
+    top: 5vh;
+    left: 15%;
+}
+
+.links .sp-2 a i {
+    top: 29vh;
+    left: 15%;
+}
+
+.links .sp-3 a i {
+    top: 50vh;
+    left: 15%;
+}
+
+.links .sp-4 a i {
+    top: 5vh;
+    left: 64%;
+}
+
+.links .sp-5 a i {
+    top: 29vh;
+    left: 64%;
+}
+
+
+.links .sp-6 a i{
+    top: 50vh;
+    left: 64%;
+}
+
+.links .sp-1 a i:hover {
+    color: #0F69FE;
+}
+
+.links .sp-2 a i:hover {
+    color: #08C40E;
+}
+
+.links .sp-3 a i:hover {
+    color: #EF0AA8;
+}
+
+.links .sp-4 a i:hover {
+    color: #1469C7;
+}
+
+.links .sp-5 a i:hover {
+    color: #112e58;
+}
+
+
+.links .sp-6 a i:hover {
+    color: #EF232C;
+}
+
